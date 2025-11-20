@@ -1,0 +1,133 @@
+/* ===== FICHE DE STYLE ===== */
+
+/* === Importation des polices === */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* === Background === */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(47, 88%, 63%);
+    font-family: 'Figtree', serif;
+    margin: 0;
+}
+
+body p {
+    font-size: 15px;
+}
+
+/* === Container === */
+.container {
+    margin: 40px 30px;
+    padding: 22px 22px;
+    background: hsl(0,0%,100%);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    box-shadow: 8px 8px 0 black;
+}
+
+/* === Image === */
+.container img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+
+/* === Badge === */
+.badge-section {
+    margin-top: 28px;
+}
+.badge {
+    background-color: hsl(47, 88%, 63%);
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 900;
+
+}
+
+/* === Date de publication === */
+.published {
+    font-weight: 500;
+    margin-top: 4px;
+}
+
+.published p {
+    font-size: 12px;
+}
+
+/* === Attribution === */
+
+.attribution p:first-child {
+    color: hsl(0, 0%, 7%);
+    font-size: 22px;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    margin-top: 4px;
+    display: inline;
+}
+
+.attribution p:first-child:hover {
+    cursor: pointer;
+    color: hsl(47, 88%, 63%)
+}
+
+.attribution p:last-child {
+    color: hsl(0, 0%, 42%);
+    font-weight: 500;
+}
+
+/* === Auteur article === */
+.author_published {
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+}
+
+/* Image */
+.author_published img {
+    width: 32px;
+}
+
+/* Nom */
+.author_published p {
+    margin-left: 10px;
+    font-weight: 900;
+}
+
+/* === Auteur === */
+.author {
+    text-align: center;
+}
+
+
+/* ===== RESPONSIVE ===== */
+/* Desktop (1440px) */
+@media (min-width: 600px) {
+    .container {
+        max-width: 300px;
+        padding: 18px 18px;
+        box-shadow: 7px 7px 0 black;
+    }
+
+    .attribution p:first-child {
+        font-size: 20px;
+        margin-top: 0;
+    }
+    .attribution p:last-child {
+        font-size: 14px
+    }
+    .author_published img {
+        width: 28px;
+    }
+    .author_published p {
+        font-size: 12px;
+        margin-top: 6px;
+    }
+
+}
+
