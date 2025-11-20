@@ -1,0 +1,72 @@
+/* ===== FICHE DE STYLE ===== */
+/* === Importation des polices === */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* === Background === */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(212, 45%, 89%);
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+}
+
+/* === Container === */
+.container {
+    margin: 40px 30px;
+    padding: 18px 18px;
+    background: hsl(0,0%,100%);
+    border-radius: 20px;
+    box-shadow: 0 3px 24px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+}
+
+/* === Image === */
+.container img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* === Attribution === */
+.attribution {
+    text-align: center;
+    padding: 0 20px;
+}
+
+.attribution p:first-child {
+    color: hsl(218, 44%, 22%);
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.attribution p:last-child {
+    color: hsl(216, 15%, 48%);
+    font-weight: 400;
+    font-size: 18px
+}
+
+.author {
+    text-align: center;
+}
+
+/* ===== RESPONSIVE ===== */
+/* Desktop (1440px) */
+@media (min-width: 600px) {
+    .container {
+        max-width: 280px;
+        padding: 16px 16px;
+    }
+    .attribution {
+        padding: 0 16px;
+    }
+    .attribution p:first-child {
+        font-size: 21px;
+    }
+    .attribution p:last-child {
+        font-size: 15px
+    }
+}
+
