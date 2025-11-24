@@ -8,7 +8,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: hsl(212, 45%, 89%);
+    background-color: hsl(47, 88%, 63%);
     font-family: 'Outfit', sans-serif;
     margin: 0;
 }
@@ -16,10 +16,11 @@ body {
 /* === Container === */
 .container {
     margin: 40px 30px;
-    padding: 18px 18px;
+    padding: 22px 22px;
     background: hsl(0,0%,100%);
-    border-radius: 20px;
-    box-shadow: 0 3px 24px rgba(0,0,0,0.08);
+    border: 1px solid black;
+    box-shadow: 8px 8px 0 black;
+    border-radius: 16px;
     display: flex;
     flex-direction: column;
 }
@@ -28,30 +29,71 @@ body {
 .container img {
     width: 100%;
     border-radius: 12px;
+}
+
+/* === Badge === */
+.badge-section {
+    margin-top: 28px;
+}
+.badge {
+    background-color: hsl(47, 88%, 63%);
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 900;
+
+}
+
+/* === Date de publication === */
+.published {
+    font-weight: 500;
+    margin-top: 4px;
+}
+
+.published p {
+    font-size: 12px;
     margin-bottom: 10px;
 }
 
 /* === Attribution === */
-.attribution {
-    text-align: center;
-    padding: 0 20px;
-}
-
 .attribution p:first-child {
     color: hsl(218, 44%, 22%);
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 1rem;
+    display: inline;
 }
+
+.attribution p:first-child:hover {
+    cursor: pointer;
+    color: hsl(47, 88%, 63%);
+}
+
 .attribution p:last-child {
     color: hsl(216, 15%, 48%);
     font-weight: 400;
-    font-size: 18px
+    font-size: 14px
 }
 
-/* === Author === */
-.author {
-    text-align: center;
+/* === Auteur article === */
+.author_published {
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+}
+
+/* Image */
+.author_published img {
+    width: 32px;
+    color: hsl(216, 15%, 48%);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/* Nom */
+.author_published p {
+    margin-left: 10px;
+    font-weight: 900;
 }
 
 /* ===== RESPONSIVE ===== */
@@ -61,14 +103,16 @@ body {
         max-width: 280px;
         padding: 16px 16px;
     }
-    .attribution {
-        padding: 0 16px;
-    }
     .attribution p:first-child {
         font-size: 21px;
     }
-    .attribution p:last-child {
-        font-size: 15px
+    .author_published img {
+        width: 28px;
     }
+    .author_published p {
+        font-size: 12px;
+        margin-top: 6px;
+    }
+
 }
 
