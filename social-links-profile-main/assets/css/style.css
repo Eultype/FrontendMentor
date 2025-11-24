@@ -1,0 +1,88 @@
+/* -----------------------------
+   MOBILE
+------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #141414;
+    font-family: Inter, sans-serif;
+    color: #fff;
+    font-size: 14px;
+}
+
+/* Carte */
+.card {
+    background: #1f1f1f;
+    width: 100%;
+    min-width: 330px;
+    padding: 30px 20px 10px 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+/* Avatar */
+.avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* Texts */
+h1 {
+    margin: 10px 0 10px;
+    font-weight: 700;
+}
+
+.location {
+    color: #b6ff59;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.bio {
+    color: #cccccc;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* Boutons */
+.btn {
+    display: block;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 0;
+    border-radius: 10px;
+    font-weight: 600;
+    margin: 15px 0;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: #b6ff59;
+    color: black;
+    cursor: pointer;
+}
+
+/* -----------------------------
+   DESKTOP
+------------------------------ */
+
+@media (min-width: 600px) {
+    .card {
+        padding: 40px 30px;
+    }
+}
